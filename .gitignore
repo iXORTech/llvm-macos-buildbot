@@ -1,1 +1,4 @@
+llvm*.src*
+final/
+
 .DS_Store
