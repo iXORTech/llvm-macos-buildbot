@@ -12,13 +12,12 @@ jobs:
   build:
     strategy:
       matrix:
-        arch: [x86-64, arm64]
-        os: [macos-13, macos-14]
-        exclude:
-          - os: macos-13
-            arch: arm64
-          - os: macos-14
-            arch: x86-64
+        arch: [arm64, x86-64]
+        include:
+          - arch: arm64
+            os: macos-14
+          - arch: x86-64
+            os: macos-13
       fail-fast: true
       max-parallel: 2
     uses: ./.github/workflows/jobs.yml
