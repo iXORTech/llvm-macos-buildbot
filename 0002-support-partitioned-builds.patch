@@ -3,9 +3,9 @@
 @@ -46,6 +46,7 @@ BuildDir="`pwd`"
  ExtraConfigureFlags=""
  ExportBranch=""
- git_ref=""
 +Stages="all"
- 
+ git_ref=""
+ do_cmake_cache="no"
  do_bolt="no"
  if [ "$System" = "Linux" ]; then
 @@ -200,6 +201,20 @@ while [ $# -gt 0 ]; do
