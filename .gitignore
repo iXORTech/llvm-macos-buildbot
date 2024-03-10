@@ -1,1 +1,6 @@
+# LLVM Source
+llvm*src*
+final/
+
+# macOS File System
 .DS_Store
