@@ -1,4 +1,4 @@
-name: Build, package and release clang+llvm
+name: Building, packaging and releasing clang+llvm
 
 on:
   workflow_call:

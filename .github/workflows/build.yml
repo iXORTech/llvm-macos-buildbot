@@ -20,7 +20,7 @@ jobs:
             os: macos-13
       fail-fast: true
       max-parallel: 2
-    uses: ./.github/workflows/jobs.yml
+    uses: ./.github/workflows/building.yml
     with:
       arch: ${{ matrix.arch }}
       os:  ${{ matrix.os }}
